@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  font-size: 18px;
+  line-height: 2;
+}
+.navbar {
+  width: 100vw;
+  height: 60px;
+  background-color: rgba(39, 58, 12, 0.603);
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.navbar_wrapper {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid blue; */
+  max-width: 1080px;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  margin: 0 auto;
+}
+.brand {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+.navbar_menu > a {
+  margin-left: 20px;
+}
+.navbar_menu > a:hover {
+  color: black;
+  font-size: 20px;
+}
+main {
+  width: 100vw;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  width: inherit;
+  max-width: 1080px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  text-shadow: 3px 3px 5px rgb(107, 99, 99);
+  margin-top: 40px;
+  transition-duration: 5s;
+
+  /* PARALAX */
+  background-attachment: fixed;
+
+  /* BACKGROUND IMAGE */
+  background-image: url('https://images.unsplash.com/photo-1660272785991-10326c8ce15e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2580&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  text-shadow: 4px 3px 5px white;
+  margin: 10px 0;
+}
+
+.hero h3 {
+  font-size: 32px;
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.87);
+  margin: 10px 0;
+}
+
+.hero:hover {
+  background-position: bottom;
+}
+#about {
+  width: 100vw;
+  height: 450px;
+  background-color: rgba(39, 58, 12, 0.082);
+  /* box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.411); */
+  margin: 40px 0;
+}
+.section_wrapper {
+  width: inherit;
+  height: inherit;
+  max-width: 1080px;
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.section_article {
+  flex: 1;
+  /* border: 1px solid red; */
+  padding: 20px;
+}
+
+.section_image {
+  flex: 1;
+  /* border: 1px solid white; */
+  background-image: url('https://images.pexels.com/photos/2541239/pexels-photo-2541239.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: cover;
+  background-position: bottom;
+  transition-duration: 1s;
+  margin: 30px;
+  border-radius: 30px;
+}
+.section_image:hover {
+  background-position: right;
+}
+#contact {
+  width: 100vw;
+  height: auto;
+}
+.contact_wrapper {
+  width: inherit;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  background-image: url('https://images.pexels.com/photos/11071498/pexels-photo-11071498.jpeg?auto=compress&cs=tinysrgb&w=5220&lazy=load');
+  background-size: cover;
+  background-position: center;
+  transition-duration: 4s;
+  background-attachment: fixed;
+}
+.contact_wrapper:hover{
+  background-position: bottom;
+}
+.contact_left {
+  flex: 3;
+  /* border: 1px solid red; */
+}
+.contact_right {
+  flex: 1;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.contact_form {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+}
+.contact_form input {
+  height: 40px;
+  padding: 0 8px;
+}
+.contact_form input {
+  height: 40px;
+  padding: 0 8px;
+}
+
+.contact_form textarea {
+  padding: 8px;
+  height: 120px;
+}
+
+.contact_form button {
+  height: 40px;
+  background-color: orange;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+footer {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.568);
+  color: white;
+}

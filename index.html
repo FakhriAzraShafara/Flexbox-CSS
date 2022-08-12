@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <div class="navbar_wrapper">
+          <h1 class="brand">Fakhri Azra Shafara</h1>
+          <menu class="navbar_menu">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#galery">Galery</a>
+          </menu>
+        </div>
+      </nav>
+      <!-- END NAVBAR -->
+
+    <main class="container">
+      <!-- HERO -->
+      <div class="hero">
+        <h1>Fakhri Azra Shafara</h1>
+        <h3>Web Developper</h3>
+      </div>
+      <!-- END HERO -->
+
+      <!-- SECTION ABOUT -->
+      <section id="about">
+        <div class="section_wrapper">
+          <article class="section_article">
+            <p>
+              The article element represents a complete, or self-contained,
+              composition in a document, page, application, or site and that is,
+              in principle, independently distributable or reusable, e.g. in
+              syndication.
+            </p>
+            <p>
+              This could be a forum post, a magazine or newspaper article, a
+              blog entry, a user-submitted comment, an interactive widget or
+              gadget, or any other independent item of content. Each article
+              should be identified, typically by including a heading (h1–h6
+              element) as a child of the article element.
+            </p>
+          </article>
+          <div class="section_image"></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact_wrapper">
+          <div class="contact_left"></div>
+
+          <div class="contact_right">
+            <form class="contact_form">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+
+              <label class="message">Pesan</label>
+              <textarea name="message" id="message"></textarea>
+
+              <button>Kirim</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      fakhrishafara @2022
+    </footer>
+  </body>
+</html>
